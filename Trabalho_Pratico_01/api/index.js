@@ -31,11 +31,6 @@ app.get('/', (req, res) => {
 
 app.get('/pessoas', (req, res) => {
     res.send(resultados.pessoas)
-
-    //Exibir Retorno HTTP Status
-    const retornoHTTPcode = res.statusCode
-    const retornoHTTPMessage = res.statusMessage
-    console.log(retornoHTTPcode + retornoHTTPMessage)
 })
 
 app.get('/pessoas/:id', (req, res) => {
